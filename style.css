@@ -1,19 +1,71 @@
-body{
-    background-color: rgb(229, 239, 229);
-}
-ul {
-    list-style-type: none;
+* {
   margin: 0;
   padding: 0;
-  overflow: hidden;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    padding: 8px;
-    
-  }
+}
+
+body {
+  color:#39a6b2;
+  font-family: Arial;
+}
+header {
+  padding: 20px 35px;  /*applies 20px to every side of teh box */
+  background-color:#39a6b2;
+}
+header h1 {
+  font-weight: bold;
+  font-size: 36px;
+  color: #fffffd;
+  margin:0;
+  display: inline;
+}
+header a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+header nav {
+  float:right; /*similar to text wrapping property in docs or word */
+  margin: 7px 0; /* margin adds space to the top and bottom and 0 represents the spaces to the right and left */
+}
+header nav ul li {
+  display: inline;
+}
+header nav ul li a {
+  margin: 0 30px;
+  font-weight: lighter;
+  font-size: 22px;
+}
+
+section {
+  padding:60px;
+}
+/*hero style section*/
+.hero {
+background-image: url("./images/img-1.jpg");
+height: 400px;
+background-size: cover;
+background-position: center;
+position: relative;
+}
+
+/*About us */
+.intro{
+  text-align: center;
+}
+.intro h2{
+font-size: 55px;
+color: #024e76;
+margin-bottom: 35px;
+padding: 0 100px 20px 100px;
+border-bottom: 3px solid;
+border-color: #fce138;
+display:inline-block; 
+}
+
+.intro p{
+  line-height: 1.7;
+  color: #39a6b2;
+  width: 80%;
+  font-size: 20px;
+  margin: 0 auto;
+}
+
