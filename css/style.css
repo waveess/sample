@@ -35,6 +35,21 @@ header nav ul li a {
   font-size: 22px;
 }
 
+.apt{
+  background-color: rgb(204, 253, 237);
+  border: none;
+  color: rgb(1, 12, 12);
+  cursor: pointer;
+  font-size: 16px;
+  padding: 15px;
+  margin-top: 3%;
+}
+
+.apt:hover {
+  background-color: rgb(171, 214, 200);
+}
+
+
 /* .hero {
   background-image: url("./images/img-1.jpg");
   height: 600px;
@@ -42,3 +57,4 @@ header nav ul li a {
   background-position: center;
   position: relative;
   } */
+

@@ -1,0 +1,166 @@
+#hero1 {
+  background: url(https://4.bp.blogspot.com/_AQ0vcRxFu0A/S9shDGGyMTI/AAAAAAAAAYk/kn3WTkY2LoQ/s1600/IMG_0714.JPG);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+#hero2 {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/21555/Melissani-cave-natural.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+.hero,
+.content {
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+
+.inner {
+  min-height: 600px;
+  position: relative;
+}
+
+.hero .inner {
+  background: rgba(0, 0, 0, 0.7)
+    url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAD0lEQVQIW2NkQABjRmQOAAM+AGkQsDBSAAAAAElFTkSuQmCC)
+    repeat;
+    
+}
+
+.copy {
+  position: absolute;
+  top: 50%;
+  height: 10em;
+  margin-top: -5em;
+  width: 100%;
+}
+
+.hero h1,
+.hero h2 {
+  color: #fff;
+}
+
+.content h1,
+.content h2 {
+  color: #333;
+}
+
+h1 {
+  margin: 0px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 400;
+  font-size: 40px;
+  padding: 0px 20px;
+}
+
+h2 {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 18px;
+  padding: 0px 20px;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans');
+
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  height: 100vh;
+}
+
+.slider-container{
+   position: relative;
+   overflow: hidden;
+   width: 100vw;
+   height: 100vh; 
+   margin-top: -35%;
+}
+
+.left-slide{
+    height: 100%;
+    width: 35%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform .5s ease-in-out;
+}
+
+/* left slide immediate div */
+.left-slide > div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.left-slide h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-top: -30px;
+    color:white;
+}
+
+.right-slide {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 35%;
+    width: 65%;
+    transition: transform .5s ease-in-out;
+}
+
+.right-slide > div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+}
+
+button{
+    background-color: white;
+    border: none;
+    color: #aaa;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 15px;
+}
+
+button:hover {
+    color: #222;
+}
+
+button:focus{
+    outline: none;
+}
+
+.slider-container .action-buttons button {
+    position: absolute;
+    left: 35%;
+    top: 50%;
+
+   z-index: 100;       /* THIS WILL KEEP THE BUTTONS ON TOP OF THE PICTURES */
+}
+
+.slider-container .action-buttons .down-button {
+     /* THIS WILL MOVE THE BUTTON DOWN */
+    transform: translateX(-100%);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px; 
+}
+.slider-container .action-buttons .up-button {
+    /* THIS WILL MOVE THE BUTTON UP */
+    transform: translateY(-100%);  
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px; 
+}

@@ -1,0 +1,28 @@
+button{
+	background-color: rgb(204, 253, 237);
+	border: none;
+	color: rgb(1, 12, 12);
+	cursor: pointer;
+	font-size: 16px;
+	padding: 20px 55px;
+	margin-top: 3%;
+	margin-left:45%;
+	display: block;
+	
+  }
+  
+  button:hover {
+	background-color: rgb(171, 214, 200);
+  }
+
+  h1{
+	display: block;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 45%;
+    margin-right: 0;
+    font-weight: bold;
+	border: none;
+	
+  }
